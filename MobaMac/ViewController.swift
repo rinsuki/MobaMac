@@ -23,7 +23,7 @@ class ViewController: NSViewController {
 const css = `
 html {
     -webkit-font-smoothing: antialiased;
-    overflow-y: scroll;
+    overflow-y: ${location.href.includes("smart_phone_flash") ? "hidden": "scroll"};
 }
 body {
     font-family: Helvetica, HiraKakuPro-W3, sans-serif !important;
