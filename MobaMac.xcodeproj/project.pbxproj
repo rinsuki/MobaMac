@@ -14,6 +14,7 @@
 		CE180B9D238F76C000E39B9B /* MobaMacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE180B9C238F76C000E39B9B /* MobaMacTests.swift */; };
 		CE180BA8238F76C000E39B9B /* MobaMacUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE180BA7238F76C000E39B9B /* MobaMacUITests.swift */; };
 		CE180BB7238F79E900E39B9B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = CE180BB6238F79E900E39B9B /* SnapKit */; };
+		CE26922D238FA69A00FD0270 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE26922C238FA69A00FD0270 /* WindowController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		CE180BA7238F76C000E39B9B /* MobaMacUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobaMacUITests.swift; sourceTree = "<group>"; };
 		CE180BA9238F76C000E39B9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE180BB9238F890200E39B9B /* PrivateAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrivateAPI.h; sourceTree = "<group>"; };
+		CE26922C238FA69A00FD0270 /* WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				CE180B89238F76BE00E39B9B /* AppDelegate.swift */,
+				CE26922C238FA69A00FD0270 /* WindowController.swift */,
 				CE180B8B238F76BE00E39B9B /* ViewController.swift */,
 				CE180B8D238F76C000E39B9B /* Assets.xcassets */,
 				CE180B8F238F76C000E39B9B /* Main.storyboard */,
@@ -265,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE180B8C238F76BE00E39B9B /* ViewController.swift in Sources */,
+				CE26922D238FA69A00FD0270 /* WindowController.swift in Sources */,
 				CE180B8A238F76BE00E39B9B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

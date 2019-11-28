@@ -59,6 +59,7 @@ document.head.appendChild(dom)
         webView._pageZoomFactor = 1.25
         webView._allowsRemoteInspection = true
         webView._overrideDeviceScaleFactor = 2
+        webView.navigationDelegate = self
     }
 
     override var representedObject: Any? {
@@ -68,3 +69,35 @@ document.head.appendChild(dom)
     }
 }
 
+extension ViewController: WKNavigationDelegate {
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        changeUrlBar()
+        changeTitle()
+    }
+    
+    private func changeUrlBar() {
+        guard let windowController = view.window?.windowController as? WindowController else { return }
+        guard var url = webView.url else { return }
+//        if  let urlComponents = URLComponents(string: url.absoluteString.replacingOccurrences(of: "&amp;", with: "&")),
+//            let urlQueryItems = urlComponents.queryItems,
+//            let backendUrl = urlQueryItems.first(where: { $0.name == "url" })?.value {
+//            url = URL(string: "mobamas://\(backendUrl.replacingOccurrences(of: "http://125.6.169.35/idolmaster/", with: ""))")!
+//        }
+        windowController.urlBar.stringValue = url.absoluteString
+    }
+    
+    func changeTitle() {
+        webView.evaluateJavaScript("""
+(() => {
+    const c=document.querySelector('#jsCommentTop')
+    if(c) return c.textContent
+    const d=document.querySelector('.area_menu_header h1')
+    if(d) return d.textContent
+})()
+""") { res, err in
+            if let res = res as? String {
+                self.view.window?.title = res
+            }
+        }
+    }
+}
