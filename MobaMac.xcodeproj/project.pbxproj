@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		CE180B91238F76C000E39B9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE180B8F238F76C000E39B9B /* Main.storyboard */; };
 		CE180B9D238F76C000E39B9B /* MobaMacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE180B9C238F76C000E39B9B /* MobaMacTests.swift */; };
 		CE180BA8238F76C000E39B9B /* MobaMacUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE180BA7238F76C000E39B9B /* MobaMacUITests.swift */; };
+		CE180BB7238F79E900E39B9B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = CE180BB6238F79E900E39B9B /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		CE180BA3238F76C000E39B9B /* MobaMacUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobaMacUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE180BA7238F76C000E39B9B /* MobaMacUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobaMacUITests.swift; sourceTree = "<group>"; };
 		CE180BA9238F76C000E39B9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE180BB9238F890200E39B9B /* PrivateAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrivateAPI.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE180BB7238F79E900E39B9B /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +105,7 @@
 				CE180B8F238F76C000E39B9B /* Main.storyboard */,
 				CE180B92238F76C000E39B9B /* Info.plist */,
 				CE180B93238F76C000E39B9B /* MobaMac.entitlements */,
+				CE180BB9238F890200E39B9B /* PrivateAPI.h */,
 			);
 			path = MobaMac;
 			sourceTree = "<group>";
@@ -140,6 +144,9 @@
 			dependencies = (
 			);
 			name = MobaMac;
+			packageProductDependencies = (
+				CE180BB6238F79E900E39B9B /* SnapKit */,
+			);
 			productName = MobaMac;
 			productReference = CE180B86238F76BE00E39B9B /* MobaMac.app */;
 			productType = "com.apple.product-type.application";
@@ -212,6 +219,9 @@
 				Base,
 			);
 			mainGroup = CE180B7D238F76BE00E39B9B;
+			packageReferences = (
+				CE180BB5238F79E900E39B9B /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = CE180B87238F76BE00E39B9B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -423,7 +433,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 4XKKKM86RN;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				INFOPLIST_FILE = MobaMac/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -431,6 +441,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.rinsuki.apps.mac.MobaMac;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = MobaMac/PrivateAPI.h;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -443,7 +454,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 4XKKKM86RN;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				INFOPLIST_FILE = MobaMac/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -451,6 +462,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.rinsuki.apps.mac.MobaMac;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = MobaMac/PrivateAPI.h;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -579,6 +591,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CE180BB5238F79E900E39B9B /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CE180BB6238F79E900E39B9B /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE180BB5238F79E900E39B9B /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CE180B7E238F76BE00E39B9B /* Project object */;
 }
