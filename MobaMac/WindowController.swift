@@ -18,7 +18,9 @@ class WindowController: NSWindowController {
     private lazy var navigationButtons = NSSegmentedControl(
         labels: ["<", ">"], trackingMode: .momentary,
         target: self, action: #selector(navigationButtonClicked)
-    )
+    ) ※ { v in
+        v.segmentStyle = .separated
+    }
     private lazy var openMyStudioButton = NSButton(title: "🏠", target: self, action: #selector(self.openMyStudio)) ※ { b in
         b.bezelStyle = .texturedRounded
     }
