@@ -16,12 +16,12 @@ class WindowController: NSWindowController {
         v.allowsUserCustomization = true
     }
     private lazy var navigationButtons = NSSegmentedControl(
-        labels: ["<", ">"], trackingMode: .momentary,
+        images: [NSImage(named: NSImage.goBackTemplateName)!, NSImage(named: NSImage.goForwardTemplateName)!], trackingMode: .momentary,
         target: self, action: #selector(navigationButtonClicked)
     ) ※ { v in
         v.segmentStyle = .separated
     }
-    private lazy var openMyStudioButton = NSButton(title: "🏠", target: self, action: #selector(self.openMyStudio)) ※ { b in
+    private lazy var openMyStudioButton = NSButton(image: NSImage(named: NSImage.homeTemplateName)!, target: self, action: #selector(self.openMyStudio)) ※ { b in
         b.bezelStyle = .texturedRounded
     }
     lazy var urlBar = NSTextField(string: "") ※ { v in
