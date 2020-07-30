@@ -10,11 +10,20 @@ import Cocoa
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
-    lazy var windowController = WindowController()
+    let windowController = WindowController()
+    
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         print("!")
-        windowController = WindowController()
         windowController.showWindow(self)
+        windowController.window?.orderFront(self)
+    }
+    
+    func applicationShouldHandleReopen(_ sender: NSApplication, hasVisibleWindows flag: Bool) -> Bool {
+        if !flag {
+            windowController.showWindow(self)
+            windowController.window?.orderFront(self)
+        }
+        return false
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
