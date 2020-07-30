@@ -14,6 +14,10 @@ class ViewController: NSViewController {
 
     var webView: WKWebView!
     
+    override func loadView() {
+        view = NSView()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

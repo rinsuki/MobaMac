@@ -3,18 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A9BB149748E0AB84DEC2FF0C /* Pods_MobaMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8B488F0FC732204ADDEAF1F /* Pods_MobaMac.framework */; };
+		BC77309BCCE3E6CD2B5FA1AF /* Pods_MobaMacTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51F5C084ABA2DB3B9A375883 /* Pods_MobaMacTests.framework */; };
 		CE180B8A238F76BE00E39B9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE180B89238F76BE00E39B9B /* AppDelegate.swift */; };
 		CE180B8C238F76BE00E39B9B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE180B8B238F76BE00E39B9B /* ViewController.swift */; };
 		CE180B8E238F76C000E39B9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE180B8D238F76C000E39B9B /* Assets.xcassets */; };
 		CE180B91238F76C000E39B9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE180B8F238F76C000E39B9B /* Main.storyboard */; };
 		CE180B9D238F76C000E39B9B /* MobaMacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE180B9C238F76C000E39B9B /* MobaMacTests.swift */; };
 		CE180BA8238F76C000E39B9B /* MobaMacUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE180BA7238F76C000E39B9B /* MobaMacUITests.swift */; };
-		CE180BB7238F79E900E39B9B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = CE180BB6238F79E900E39B9B /* SnapKit */; };
 		CE26922D238FA69A00FD0270 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE26922C238FA69A00FD0270 /* WindowController.swift */; };
+		E8A1CDFD3F8CA4BFE57C4245 /* Pods_MobaMac_MobaMacUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06B7824B1C9AAE0997B32573 /* Pods_MobaMac_MobaMacUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		034129F956048D2A722BD486 /* Pods-MobaMacTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobaMacTests.debug.xcconfig"; path = "Target Support Files/Pods-MobaMacTests/Pods-MobaMacTests.debug.xcconfig"; sourceTree = "<group>"; };
+		06B7824B1C9AAE0997B32573 /* Pods_MobaMac_MobaMacUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobaMac_MobaMacUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		19930D830FE0FC7D3520F299 /* Pods-MobaMac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobaMac.debug.xcconfig"; path = "Target Support Files/Pods-MobaMac/Pods-MobaMac.debug.xcconfig"; sourceTree = "<group>"; };
+		24C344D7AFB7609CC88DC481 /* Pods-MobaMac-MobaMacUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobaMac-MobaMacUITests.release.xcconfig"; path = "Target Support Files/Pods-MobaMac-MobaMacUITests/Pods-MobaMac-MobaMacUITests.release.xcconfig"; sourceTree = "<group>"; };
+		51F5C084ABA2DB3B9A375883 /* Pods_MobaMacTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobaMacTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EB5781069B572C72A07D7A5 /* Pods-MobaMac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobaMac.release.xcconfig"; path = "Target Support Files/Pods-MobaMac/Pods-MobaMac.release.xcconfig"; sourceTree = "<group>"; };
 		CE180B86238F76BE00E39B9B /* MobaMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobaMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE180B89238F76BE00E39B9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE180B8B238F76BE00E39B9B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,6 +58,9 @@
 		CE180BA9238F76C000E39B9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE180BB9238F890200E39B9B /* PrivateAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrivateAPI.h; sourceTree = "<group>"; };
 		CE26922C238FA69A00FD0270 /* WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
+		D8B488F0FC732204ADDEAF1F /* Pods_MobaMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobaMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D96A7B95557E43A27EBF32C9 /* Pods-MobaMacTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobaMacTests.release.xcconfig"; path = "Target Support Files/Pods-MobaMacTests/Pods-MobaMacTests.release.xcconfig"; sourceTree = "<group>"; };
+		E9FA6B969A8AD3C55D1E81B2 /* Pods-MobaMac-MobaMacUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobaMac-MobaMacUITests.debug.xcconfig"; path = "Target Support Files/Pods-MobaMac-MobaMacUITests/Pods-MobaMac-MobaMacUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE180BB7238F79E900E39B9B /* SnapKit in Frameworks */,
+				A9BB149748E0AB84DEC2FF0C /* Pods_MobaMac.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC77309BCCE3E6CD2B5FA1AF /* Pods_MobaMacTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +84,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8A1CDFD3F8CA4BFE57C4245 /* Pods_MobaMac_MobaMacUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3760D915E3AB708D6462DDD1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D8B488F0FC732204ADDEAF1F /* Pods_MobaMac.framework */,
+				06B7824B1C9AAE0997B32573 /* Pods_MobaMac_MobaMacUITests.framework */,
+				51F5C084ABA2DB3B9A375883 /* Pods_MobaMacTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8F26C64CE7D5DD17E1FAC36E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				19930D830FE0FC7D3520F299 /* Pods-MobaMac.debug.xcconfig */,
+				7EB5781069B572C72A07D7A5 /* Pods-MobaMac.release.xcconfig */,
+				E9FA6B969A8AD3C55D1E81B2 /* Pods-MobaMac-MobaMacUITests.debug.xcconfig */,
+				24C344D7AFB7609CC88DC481 /* Pods-MobaMac-MobaMacUITests.release.xcconfig */,
+				034129F956048D2A722BD486 /* Pods-MobaMacTests.debug.xcconfig */,
+				D96A7B95557E43A27EBF32C9 /* Pods-MobaMacTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CE180B7D238F76BE00E39B9B = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +121,8 @@
 				CE180B9B238F76C000E39B9B /* MobaMacTests */,
 				CE180BA6238F76C000E39B9B /* MobaMacUITests */,
 				CE180B87238F76BE00E39B9B /* Products */,
+				8F26C64CE7D5DD17E1FAC36E /* Pods */,
+				3760D915E3AB708D6462DDD1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,9 +176,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE180BAC238F76C000E39B9B /* Build configuration list for PBXNativeTarget "MobaMac" */;
 			buildPhases = (
+				D0C4C251D9E76A3B65A500A7 /* [CP] Check Pods Manifest.lock */,
 				CE180B82238F76BE00E39B9B /* Sources */,
 				CE180B83238F76BE00E39B9B /* Frameworks */,
 				CE180B84238F76BE00E39B9B /* Resources */,
+				BCE4B4509085D6E99943CF6F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -148,7 +188,6 @@
 			);
 			name = MobaMac;
 			packageProductDependencies = (
-				CE180BB6238F79E900E39B9B /* SnapKit */,
 			);
 			productName = MobaMac;
 			productReference = CE180B86238F76BE00E39B9B /* MobaMac.app */;
@@ -158,6 +197,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE180BAF238F76C000E39B9B /* Build configuration list for PBXNativeTarget "MobaMacTests" */;
 			buildPhases = (
+				7549183FD1A0892E28C9EC89 /* [CP] Check Pods Manifest.lock */,
 				CE180B94238F76C000E39B9B /* Sources */,
 				CE180B95238F76C000E39B9B /* Frameworks */,
 				CE180B96238F76C000E39B9B /* Resources */,
@@ -176,9 +216,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE180BB2238F76C000E39B9B /* Build configuration list for PBXNativeTarget "MobaMacUITests" */;
 			buildPhases = (
+				7050DBDF0CEA92451601C105 /* [CP] Check Pods Manifest.lock */,
 				CE180B9F238F76C000E39B9B /* Sources */,
 				CE180BA0238F76C000E39B9B /* Frameworks */,
 				CE180BA1238F76C000E39B9B /* Resources */,
+				8957A9AFE649958F55ED7A81 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -196,7 +238,7 @@
 		CE180B7E238F76BE00E39B9B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1110;
+				LastSwiftUpdateCheck = 1160;
 				LastUpgradeCheck = 1110;
 				ORGANIZATIONNAME = rinsuki;
 				TargetAttributes = {
@@ -223,7 +265,6 @@
 			);
 			mainGroup = CE180B7D238F76BE00E39B9B;
 			packageReferences = (
-				CE180BB5238F79E900E39B9B /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = CE180B87238F76BE00E39B9B /* Products */;
 			projectDirPath = "";
@@ -261,6 +302,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7050DBDF0CEA92451601C105 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MobaMac-MobaMacUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7549183FD1A0892E28C9EC89 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MobaMacTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8957A9AFE649958F55ED7A81 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MobaMac-MobaMacUITests/Pods-MobaMac-MobaMacUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MobaMac-MobaMacUITests/Pods-MobaMac-MobaMacUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MobaMac-MobaMacUITests/Pods-MobaMac-MobaMacUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCE4B4509085D6E99943CF6F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MobaMac/Pods-MobaMac-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MobaMac/Pods-MobaMac-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MobaMac/Pods-MobaMac-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0C4C251D9E76A3B65A500A7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MobaMac-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CE180B82238F76BE00E39B9B /* Sources */ = {
@@ -431,6 +575,7 @@
 		};
 		CE180BAD238F76C000E39B9B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19930D830FE0FC7D3520F299 /* Pods-MobaMac.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MobaMac/MobaMac.entitlements;
@@ -452,6 +597,7 @@
 		};
 		CE180BAE238F76C000E39B9B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EB5781069B572C72A07D7A5 /* Pods-MobaMac.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MobaMac/MobaMac.entitlements;
@@ -473,6 +619,7 @@
 		};
 		CE180BB0238F76C000E39B9B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 034129F956048D2A722BD486 /* Pods-MobaMacTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -495,6 +642,7 @@
 		};
 		CE180BB1238F76C000E39B9B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D96A7B95557E43A27EBF32C9 /* Pods-MobaMacTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -517,6 +665,7 @@
 		};
 		CE180BB3238F76C000E39B9B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9FA6B969A8AD3C55D1E81B2 /* Pods-MobaMac-MobaMacUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -537,6 +686,7 @@
 		};
 		CE180BB4238F76C000E39B9B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24C344D7AFB7609CC88DC481 /* Pods-MobaMac-MobaMacUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -595,25 +745,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		CE180BB5238F79E900E39B9B /* XCRemoteSwiftPackageReference "SnapKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SnapKit/SnapKit";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.1;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		CE180BB6238F79E900E39B9B /* SnapKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CE180BB5238F79E900E39B9B /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = SnapKit;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CE180B7E238F76BE00E39B9B /* Project object */;
 }
