@@ -374,8 +374,16 @@
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="History" id="kWl-9D-7fZ">
                                     <items>
-                                        <menuItem title="Back" keyEquivalent="[" id="O4U-Lb-ivs"/>
-                                        <menuItem title="Next" keyEquivalent="]" id="eGi-dF-rYx"/>
+                                        <menuItem title="Back" keyEquivalent="[" id="O4U-Lb-ivs">
+                                            <connections>
+                                                <action selector="goBack:" target="Ady-hI-5gd" id="e1l-kA-4ua"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Next" keyEquivalent="]" id="eGi-dF-rYx">
+                                            <connections>
+                                                <action selector="goForward:" target="Ady-hI-5gd" id="Tri-lG-6tu"/>
+                                            </connections>
+                                        </menuItem>
                                         <menuItem title="My Studio" keyEquivalent="H" id="IAs-1e-886">
                                             <modifierMask key="keyEquivalentModifierMask" shift="YES" command="YES"/>
                                         </menuItem>

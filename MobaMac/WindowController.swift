@@ -49,6 +49,15 @@ class WindowController: NSWindowController {
     }
 
     @objc func navigationButtonClicked() {
+        let selector: Selector
+        switch navigationButtons.selectedSegment {
+        case 0:
+            selector = "goBack:"
+        case 1:
+            selector = "goForward:"
+        default:
+            return
+        }
     }
     
     @objc func openMyStudio() {
