@@ -18,4 +18,9 @@
 
 @end
 
+@interface WKPreferences (WKPrivate)
+@property (nonatomic, setter=_setDeveloperExtrasEnabled:) BOOL _developerExtrasEnabled;
+
+@end
+
 #endif /* PrivateAPI_h */

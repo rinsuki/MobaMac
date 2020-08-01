@@ -40,6 +40,7 @@ document.head.appendChild(dom)
 """, injectionTime: .atDocumentEnd, forMainFrameOnly: false)
         
         let config = WKWebViewConfiguration()
+        config.preferences._developerExtrasEnabled = true
 
         let contentController = WKUserContentController()
         contentController.addUserScript(css)
@@ -58,10 +59,8 @@ document.head.appendChild(dom)
         let req = URLRequest(url: URL(string: "http://sp.pf.mbga.jp/12008305")!)
         webView.load(req)
         webView.allowsMagnification = true
-        webView.magnification = 2
         webView.allowsBackForwardNavigationGestures = true
         webView._pageZoomFactor = 1.25
-        webView._allowsRemoteInspection = true
         webView._overrideDeviceScaleFactor = 2
         webView.navigationDelegate = self
     }
