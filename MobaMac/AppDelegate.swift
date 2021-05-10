@@ -14,6 +14,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         print("!")
+        // didnt work on WebKit2?
+        UserDefaults.standard.set(false, forKey: "WebKitUsesPageCachePreferenceKey")
         windowController.showWindow(self)
         windowController.window?.orderFront(self)
     }

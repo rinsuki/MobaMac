@@ -28,12 +28,15 @@ class WindowController: NSWindowController {
         v.bezelStyle = .roundedBezel
         v.isEditable = true
     }
-    private lazy var captureButton = NSButton(title: "📸", target: self, action: #selector(self.captureScreenshot)) ※ { b in
+    private lazy var captureButton = NSButton(title: "📸", target: nil, action: #selector(ViewController.captureScreenshot)) ※ { b in
         b.bezelStyle = .texturedRounded
     }
     
     init() {
         super.init(window: .init(.init(contentViewController: ViewController())))
+        if #available(macOS 11.0, *) {
+            window!.titleVisibility = .hidden
+        }
         window!.center()
         window!.setFrameAutosaveName("Main Window")
         toolbar.delegate = self
@@ -62,9 +65,6 @@ class WindowController: NSWindowController {
     
     @objc func openMyStudio() {
     }
-    
-    @objc func captureScreenshot() {
-    }
 }
 
 fileprivate extension NSToolbarItem.Identifier {
@@ -85,10 +85,6 @@ extension WindowController: NSToolbarDelegate {
     }
     
     func toolbarAllowedItemIdentifiers(_ toolbar: NSToolbar) -> [NSToolbarItem.Identifier] {
-        return toolbarDefaultItemIdentifiers(toolbar)
-    }
-    
-    func toolbarSelectableItemIdentifiers(_ toolbar: NSToolbar) -> [NSToolbarItem.Identifier] {
         return toolbarDefaultItemIdentifiers(toolbar)
     }
     

@@ -22,22 +22,30 @@ class ViewController: NSViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        let css = WKUserScript(source: """
-(() => {
-const css = `
-html {
-    -webkit-font-smoothing: antialiased;
-    overflow-y: ${location.href.includes("smart_phone_flash") ? "hidden": "scroll"};
-}
-body {
-    font-family: Helvetica, HiraKakuPro-W3, sans-serif !important;
-}
-`
-const dom = document.createElement("style")
-dom.innerHTML=css
-document.head.appendChild(dom)
-})()
-""", injectionTime: .atDocumentEnd, forMainFrameOnly: false)
+        let css: WKUserScript
+        let cssString = """
+        addEventListener("DOMContentLoaded", () => {
+        document.querySelector("body > div:first-child").classList.add("docs-homescreen-freeze-el-full")
+        const css = `
+        html {
+            -webkit-font-smoothing: antialiased;
+            overflow-y: ${location.href.includes("smart_phone_flash") ? "hidden": "scroll"};
+        }
+        body {
+            font-family: Helvetica, HiraKakuPro-W3, sans-serif !important;
+        }
+        `
+        const dom = document.createElement("style")
+        dom.innerHTML=css
+        document.head.appendChild(dom)
+        })
+        """
+        if #available(OSX 11.0, *) {
+            css = WKUserScript(source: cssString, injectionTime: .atDocumentStart, forMainFrameOnly: false, in: .page)
+        } else {
+            // Fallback on earlier versions
+            css = WKUserScript(source:cssString, injectionTime: .atDocumentStart, forMainFrameOnly: false)
+        }
         
         let config = WKWebViewConfiguration()
         config.preferences._developerExtrasEnabled = true
@@ -64,10 +72,32 @@ document.head.appendChild(dom)
         webView._overrideDeviceScaleFactor = 2
         webView.navigationDelegate = self
     }
-
-    override var representedObject: Any? {
-        didSet {
-        // Update the view, if already loaded.
+    
+    @objc func captureScreenshot() {
+        let config = WKSnapshotConfiguration()
+        webView.takeSnapshot(with: config) { (image, err) in
+            guard let data = image?.tiffRepresentation else {
+                return
+            }
+            guard let pngData = NSBitmapImageRep(data: data)?.representation(using: .png, properties: [:]) else {
+                return
+            }
+            let formatter = DateFormatter()
+            formatter.locale = .init(identifier: "en_US_POSIX")
+            formatter.dateFormat = "yyyyMMdd_HHmmss"
+            let fileName = formatter.string(from: .init()) + ".png"
+            guard let documentsDir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first else {
+                return
+            }
+            let url = documentsDir.appendingPathComponent(fileName)
+            do {
+                try pngData.write(to: url)
+                NSWorkspace.shared.open(url)
+            } catch {
+                let alert = NSAlert(error: error)
+                alert.beginSheetModal(for: self.view.window!, completionHandler: nil)
+                return
+            }
         }
     }
 }
